@@ -1,0 +1,744 @@
+/*----------------------------------------------------------------*/
+/*Google Fonts*/
+/*----------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Josefin+Sans:300,400,400i,600,700&display=swap');
+/*----------------------------------------------------------------*/
+/*Google Fonts*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Global CSS Starts*/
+/*----------------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+h1,h2,h3,h4,h5,h6,p,a {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-family: 'Josefin Sans', sans-serif;
+	/*font-family: 'Bebas Neue', cursive;*/
+}
+ul,li,ol {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+a:hover {
+	text-decoration: none;
+	color: #fff
+}
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+	position: relative;
+}
+body{
+	overflow-x: hidden;
+
+}
+button:focus{
+	outline: 0px dotted;
+    outline: 0px auto -webkit-focus-ring-color;
+}
+.head_btn .top_to {
+	padding: 10px 20px;
+	border-radius: 3px;
+	background: #111;
+	position: absolute;
+	bottom: 50px;
+	right: 20px;
+}
+
+/*----------------------------------------------------------------*/
+/*Global CSS Ends*/
+/*----------------------------------------------------------------*/
+ 
+/*----------------------------------------------------------------*/
+/*Header CSS Starts*/
+/*----------------------------------------------------------------*/
+
+.header {
+	/*background: #000;*/
+	padding: 20px 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 99;
+}
+.navfixed {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0 !important;
+    background: rgba(64, 64, 64, .7) !important;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.40);
+    transition: all linear 0.5s;
+    z-index: 99999;
+}
+.navbar-toggler-icon {
+	color: #fff;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	padding: 0px;
+	margin-left: 40px;
+	position: relative;
+	transition: all linear .3s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:after {
+	content: '';
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 0%;
+	height: 2px;
+	background: #fff;
+	opacity: 0;
+	transition: all linear .2s;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover::after {
+	width: 100%;
+	opacity: 1;
+} 
+
+
+/*----------------------------------------------------------------*/
+/*Header CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Banner CSS Starts*/
+/*----------------------------------------------------------------*/
+
+.banner {
+	background: url(../img/banner.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.banner h1 {
+	font-weight: 600;
+	font-size: 62px;
+	letter-spacing: 5px;
+}
+.banner h4 {
+	font-size: 28px;
+	letter-spacing: 3px;
+}
+.banner_overlay {
+	padding: 300px 0px;
+	background: rgba(0,0,0,0.8);
+}
+/*----------------------------------------------------------------*/
+/*Banner CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*About CSS Ends*/
+/*----------------------------------------------------------------*/
+
+.about {
+	background: #111111;
+	padding: 50px 0px;
+}
+
+.abt_content h4 {
+	margin-top: 50px;
+	color: #0099cc;
+}
+.abt_content h2 {
+	margin: 20px 0px;
+	font-size: 30px;
+}
+.abt_con_two {
+	margin: 30px 0px;
+}
+.abt_content a {
+	padding: 10px 25px;
+	background: #111111;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	font-size: 14px;
+	transition: all linear .3s;
+}
+.abt_content a:hover {
+	background: #fff;;
+	color: #111111;
+	
+}
+
+/*----------------------------------------------------------------*/
+/*About CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Services CSS Starts*/
+/*----------------------------------------------------------------*/
+.services {
+	background: #111111;
+	padding: 50px 0px;
+}
+.services_header h5 {
+	color: #0099cc;
+	font-size: 32px;
+}
+.services_header h3 {
+	font-size: 42px;
+}
+.service_content {
+	background: #000;
+	/*margin-top: 30px;*/
+	position: relative;
+	border-radius: 5px;
+}
+.ser_con {
+	margin-left: 50px;
+	margin-top: 50px;
+}
+.ser_con i {
+	padding-top: 50px;
+	font-size: 60px;
+	color: #0099cc;
+}
+.ser_con h4 {
+	margin: 30px 0px 20px 0px;
+}
+.ser_con p {
+	padding-bottom: 50px;
+} 
+.service_content:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 2px;
+	width: 0%;
+	background: #fff;
+	opacity: 0;
+	transition: all linear .2s;
+}
+.service_content:hover {
+	box-shadow: 0px 0px 50px 10px #000;
+	cursor: pointer;
+}
+.service_content:hover::after {
+	width: 100%;
+	opacity: 1;
+	background: #0099cc;
+}
+/*----------------------------------------------------------------*/
+/*Services CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Skill CSS Starts*/
+/*----------------------------------------------------------------*/
+
+.skill {
+	background: #000;
+	padding: 50px 0px;
+}
+.skill_content h5{
+	font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 35px;
+    color:  #0099cc;
+}
+.skill_content p {
+	letter-spacing: 1px;
+}
+.skill_counter {
+	width: 500px;
+	margin: 50px auto;
+}
+.skill_counter h3 {
+	font-size: 18px;
+}
+.skill_counter li {
+	margin: 30px 0px;
+}
+.bar {
+	background: #0099cc;
+	display: block;
+	height: 5px;
+	border: 1px solid #fff;
+	padding: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 0 10px #0099cc;
+}
+.bar span {
+	height: 10px;
+	float: left;
+	background: rgba(0, 0, 0, .5);
+	margin-top: -5px;
+	margin-left: -5px;
+}
+.html {
+	width: 95%;
+	border-radius: 5px;
+	animation: html 2s;
+}
+.css {
+	width: 85%;
+	border-radius: 5px;
+	animation: css 2s;
+}
+.jquery {
+	width: 70%;
+	border-radius: 5px;
+	animation: jquery 2s;
+}
+.psd {
+	width: 80%;
+	border-radius: 5px;
+	animation: psd 2s;
+}
+@keyframes html {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 95%;
+	}
+}
+@keyframes css {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 85%;
+	}
+}
+@keyframes jquery {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 70%;
+	}
+}
+@keyframes psd {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 80%;
+	}
+}
+
+/*----------------------------------------------------------------*/
+/*Skill CSS Ends*/
+/*----------------------------------------------------------------*/
+
+/*----------------------------------------------------------------*/
+/*projects CSS Starts*/
+/*----------------------------------------------------------------*/
+
+
+.projects {
+	background: #111;
+	padding: 50px 0px;
+}
+.projects p {
+	color: #0099cc;
+	font-size: 24px;
+}
+.pro_content {
+	margin-top: 50px;
+	position: relative;
+}
+.projects h5 {
+	font-size: 42px;
+}
+.pro_overlay {
+	height: 100%;
+	width: 100%;
+	background: rgba(0, 153, 204, .8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: all linear .1s;
+}
+.pro_overlay h5 {
+	margin-top: 140px;
+	margin-left: 20px;
+	font-size: 26px;
+}
+.pro_overlay p {
+	font-size: 22px;
+	margin-left: 20px;
+	color: #fff;
+}
+.pro_img {
+	overflow: hidden;
+	transition: all linear .2s;
+	height: 300px;
+	/* width: 100%; */
+}
+.pro_img img {
+	transition: all linear .2s;
+	
+}
+.pro_img:hover {
+	cursor: pointer;
+}
+.pro_img:hover .pro_overlay {
+	opacity: 1;
+}
+.pro_img:hover img {
+	transform: scale(1.2);
+}
+.pro_btn {
+	margin-top: 50px;
+}
+.pro_btn a {
+	padding: 10px 25px;
+	background: #111111;
+	color: #fff;
+	border: 1px solid #fff;
+	border-radius: 2px;
+	font-size: 14px;
+	transition: all linear .3s;
+}
+.pro_btn a:hover {
+	background: #fff;;
+	color: #111111;
+	
+}
+
+
+
+
+
+/*----------------------------------------------------------------*/
+/*projects CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Freelancer CSS Starts*/
+/*----------------------------------------------------------------*/
+
+.freelancer {
+	background: url(../img/freelancer.jpg) no-repeat;
+	background-attachment: fixed;
+	/*background-position: top;*/	
+	background-size: cover;
+}
+.free_overlay {
+	background: rgba(0,0,0,.7);
+	padding: 100px 0px;
+}
+.freelancer_content h2 {
+	font-size: 32px;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 20px;
+}
+.freelancer_content .free_btn {
+	padding: 10px 25px;
+	border: 1px solid #fff;
+	transition: all linear .2s;
+	border-radius: 2px;
+
+}
+.freelancer_content .free_btn:hover {
+	background: #fff;
+	color: #000;
+}
+/*----------------------------------------------------------------*/
+/*Freelancer CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Logo CSS Starts*/
+/*----------------------------------------------------------------*/
+
+.logo {
+	background: #111;
+	padding: 50px 0px;
+}
+
+/*----------------------------------------------------------------*/
+/*Logo CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Contact CSS Starts*/
+/*----------------------------------------------------------------*/
+.contact {
+	background: url(../img/maps.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+.contact_overlay {
+	padding: 50px 0px 50px 0px;
+	background: rgba(0,0,0,.9);
+}
+.works_header p {
+	color: #0099cc;
+	font-size: 24px;
+}
+.works_header h5 {
+	font-size: 32px;
+	margin-bottom: 50px;
+}
+.contact_left i {
+	margin-bottom: 20px;
+	font-size: 30px;
+	color: #0099cc;
+}
+.contact_left span {
+	color: #fff;
+	font-size: 20px;
+	transition: all linear .2s;
+}
+.contact_left span:hover {
+	color: #0099cc;
+}
+.form-control {
+	background: transparent;
+	border: none;
+	/*border-bottom: 1px solid #fff;*/
+	width: 90%;
+	border-radius: none; 
+}
+.form-control:focus {
+	background: transparent;
+	box-shadow: none;
+}
+.f_btn {
+	margin-top: 50px;
+	margin-left: 14px;
+}
+.form_btn {
+	padding: 10px 20px;
+	background: #fff;
+	color: #000;
+	border-radius: 2px;
+	transition: all .2s;
+}
+.form_btn:hover {
+	color: #000;
+	background: #0099cc;
+}
+/*----------------------------------------------------------------*/
+/*Contact CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Footer CSS Starts*/
+/*----------------------------------------------------------------*/
+
+
+.footer {
+	background: #000;
+	padding: 20px 0px;
+}
+.footer_right {
+	float: right;
+}
+.footer_right i {
+	margin-left: 20px;
+	font-size: 24px;
+	color: #fff;
+	transition: all linear .2s;
+}
+.footer_right i:hover {
+	color: #0099cc;
+}
+
+/*----------------------------------------------------------------*/
+/*Footer CSS Ends*/
+/*----------------------------------------------------------------*/
+
+
+/*----------------------------------------------------------------*/
+/*Responsive CSS Starts*/
+/*----------------------------------------------------------------*/
+
+/*// Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { ... }
+
+/*// Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+	.pro_overlay h5 {
+    	margin-top: 120px;
+	}
+
+}
+
+/*// Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 0px;
+	}
+	.banner h1 {
+    	font-size: 36px;
+	}
+	.banner h4 {
+    	font-size: 22px;
+	}
+	.banner_overlay {
+    	padding: 200px 0px;
+	}
+	.abt_content h4 {
+		margin-top: 0px;
+	}
+	.abt_content h2 {
+    	margin: 10px 0px;
+    	font-size: 22px;
+	}
+	.abt_con_one {
+    	font-size: 14px;
+	}
+	.abt_con_two {
+    	margin: 10px 0px;
+    	font-size: 14px;
+	}
+	.ser_con {
+    	margin-left: 25px;
+	}
+	.skill_content h5 {
+    	font-size: 20px;
+	}
+	.skill_content p {
+    	font-size: 14px;
+	}
+	.skill_counter {
+    	width: auto;
+    	margin: 100px auto;
+	}
+	.pro_overlay h5 {
+    	margin-top: 80px;
+    	margin-left: 15px;
+    	font-size: 20px;
+	}
+	.pro_overlay p {
+    	font-size: 18px;
+    	margin-left: 15px;
+	}
+ }
+
+
+/*// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+	
+	.navbar-expand-lg .navbar-nav .nav-link {
+		margin-left: 0px;
+	}
+	.banner_overlay {
+    	padding: 100px 0px;
+    }
+    .banner h1 {
+    	font-size: 26px;
+    	letter-spacing: 2px;
+	}
+	.banner h4 {
+    	font-size: 18px;
+    	letter-spacing: 2px;
+	}
+	.pro_overlay h5 {
+    	margin-top: 235px;
+	}
+	.footer {
+		font-size: 12px;
+	}
+ }
+
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+	.navbar-expand-lg .navbar-nav .nav-link {
+    	margin-left: 0px;
+	}
+	.banner_overlay {
+    	padding: 100px 0px;
+    }
+    .banner h1 {
+    	font-size: 26px;
+    	letter-spacing: 2px;
+	}
+	.banner h4 {
+    	font-size: 18px;
+    	letter-spacing: 2px;
+	}
+	.abt_content h4 {
+    	margin-top: 20px;
+    	font-size: 22px;
+	}
+	.abt_content h2 {
+    	margin: 10px 0px;
+    	font-size: 18px;
+	}
+	.services_header h5 {
+    	font-size: 22px;
+	}
+	.services_header h3 {
+    	font-size: 22px;
+    	margin-top: 15px;
+	}
+	.ser_con {
+    	margin-left: 15px;
+    	margin-top: 25px;
+	}
+	.projects h5 {
+    	font-size: 36px;
+	}
+	.works_header h5 {
+    	font-size: 26px;
+    	margin-bottom: 30px;
+	}
+	.skill_counter {
+    	width: auto;
+    	margin: 30px auto;
+	}
+	.contact_left span {
+    	color: #fff;
+    	font-size: 15px;
+	}
+	.pro_overlay h5 {
+    	margin-top: 100px;
+    	font-size: 24px;
+	}
+	.footer {
+		font-size: 10px;
+	}
+	.footer_right i {
+    	margin-left: 13px;
+    	font-size: 18px;
+ 	}
+
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------*/
+/*Responsive CSS Ends*/
+/*----------------------------------------------------------------*/
+
