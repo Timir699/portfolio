@@ -137,7 +137,7 @@ button:focus{
 	letter-spacing: 3px;
 }
 .banner_overlay {
-	padding: 300px 0px;
+	padding: 260px 0px;
 	background: rgba(0,0,0,0.8);
 }
 /*----------------------------------------------------------------*/
@@ -153,10 +153,12 @@ button:focus{
 	background: #111111;
 	padding: 50px 0px;
 }
-
 .abt_content h4 {
 	margin-top: 50px;
 	color: #0099cc;
+}
+.about_img img {
+	border-radius: 5px;
 }
 .abt_content h2 {
 	margin: 20px 0px;
@@ -405,7 +407,7 @@ button:focus{
 	opacity: 1;
 }
 .pro_img:hover img {
-	transform: scale(1.2);
+	/* transform: scale(.9); */
 }
 .pro_btn {
 	margin-top: 50px;
